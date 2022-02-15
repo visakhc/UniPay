@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/drawable/ic_phonepe.xml" value="0.182" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/drawable/shape_view_homw_alert.xml" value="0.28" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/layout/activity_main.xml" value="0.1734375" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/layout/activity_splash.xml" value="0.1734375" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/UniPay/app/src/main/res/layout/bottom_sheet_upi_app.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/ic_back.xml" value="0.1" />
         <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/ic_phonepe.xml" value="0.209" />
         <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/shape_bottom_sheet.xml" value="0.1" />

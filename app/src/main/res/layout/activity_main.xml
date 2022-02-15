@@ -32,71 +32,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:maskColor="#77000000">
-
-
-    </com.budiyev.android.codescanner.CodeScannerView>
+        app:maskColor="#77000000"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.70" />
+        app:layout_constraintGuide_percent="0.20"/>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_Gpay"
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        app:cardCornerRadius="@dimen/_15sdp"
-        app:layout_constraintEnd_toStartOf="@+id/cv_phonePe"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline2">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_13sdp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_google_pay" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_phonePe"
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        app:cardCornerRadius="@dimen/_15sdp"
-        app:layout_constraintEnd_toStartOf="@+id/cv_paytm"
-        app:layout_constraintStart_toEndOf="@+id/cv_Gpay"
-        app:layout_constraintTop_toBottomOf="@id/guideline2">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_12sdp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_phonepe" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cv_paytm"
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        app:cardCornerRadius="@dimen/_15sdp"
+    <TextView
+        android:id="@+id/textView"
+        style="@style/largeTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan to Pay"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cv_phonePe"
-        app:layout_constraintTop_toBottomOf="@id/guideline2">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_15sdp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/ic_paytm" />
-    </com.google.android.material.card.MaterialCardView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,31 +42,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun handleEvents() {
 
-        binding?.cvGpay?.setOnClickListener {
-            if (mUpiId.isEmpty()) {
-                binding?.let { Snackbar.make(it.root, "Scan QR code to pay", Snackbar.LENGTH_SHORT).show() }
-            } else {
-                val PACKAGE_NAME = "com.google.android.apps.nbu.paisa.user"
-                startPayment(PACKAGE_NAME)
-            }
-        }
-        binding?.cvPaytm?.setOnClickListener {
-            if (mUpiId.isEmpty()) {
-                binding?.let { Snackbar.make(it.root, "Scan QR code to pay", Snackbar.LENGTH_SHORT).show() }
-            } else {
-                val PACKAGE_NAME = "net.one97.paytm"
-                startPayment(PACKAGE_NAME)
-            }
-        }
-        binding?.cvPhonePe?.setOnClickListener {
-            if (mUpiId.isEmpty()) {
-                binding?.let { Snackbar.make(it.root, "Scan QR code to pay", Snackbar.LENGTH_SHORT).show() }
-            } else {
-                val PACKAGE_NAME = "com.phonepe.app"
-                startPayment(PACKAGE_NAME)
-            }
-
-        }
     }
 
     private fun permissonChecker() {
@@ -100,6 +75,7 @@ class MainActivity : AppCompatActivity() {
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
                 mUpiId = it.text.toString()
+                BottomsheetUpiApp(mUpiId).show(supportFragmentManager,"uiBottomSheet")
             }
         }
 
@@ -118,12 +94,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun startPayment(packageName: String) {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(mUpiId)
-        intent.setPackage(packageName)
-        this@MainActivity.startActivityForResult(intent, 123)
-    }
 
     override fun onResume() {
         super.onResume()
