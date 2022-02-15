@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UniPay</string>
+    <string name="back">back</string>
+    <string name="title">title</string>
 </resources>

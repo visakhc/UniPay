@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/ic_phonepe.xml" value="0.209" />
+        <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/drawable/shape_bottom_sheet.xml" value="0.1" />
         <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/layout/activity_qr_scanner.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/Meridian/AndroidStudioProjects/UniPay/app/src/main/res/layout/layout_toolbar.xml" value="0.2015625" />
       </map>
     </option>
   </component>
